@@ -1,0 +1,27 @@
+  body {
+    background-color: #68b0ab;
+  }
+
+  hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #382933;
+    border-width: 15px;
+    width: 20%;
+  }
+
+  img {
+    height: 30%;
+    width: 30%;
+  }
+
+  .circular:hover {
+    border-radius: 100%;
+  }
+
+  h3 {
+    color: #065446;
+  }
+  h1 {
+    color: #0f4c75;
+  }
