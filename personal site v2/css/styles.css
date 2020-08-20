@@ -1,3 +1,110 @@
 body {
-    background-color: #68b0ab;
+  background-color: #c8d5b9;
+  margin: 0;
+  text-align: center;
+  font-family: "Barlow",serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  font-family: "Barlow",serif;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-family: "Barlow",serif;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #519872;
+}
+
+p {
+  text-align: left;
+  line-height: 1;
+  font-size: 1.5em;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #519872;
+  border-width: 15px;
+  width: 20%;
+}
+
+.top-container {
+    position: relative;
+    padding-top: 200px;
+}
+
+.brain-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 2%;
+}
+
+.profile {
+  width: 50%;
+  margin: 100px auto 100px auto;
+}
+
+.coding-picture {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+
+.workflow-picture {
+    height: 150px;
+    width: 150px;
+    float: right;
+    margin-top: 40px;
+    margin-left: 1px;
+}
+
+.contact-gif {
+  height: 150px;
+  width: 200px;
+}
+
+.skills {
+  width: 50%;
+  margin: 100px auto 100px auto;
+}
+
+.skill-row {
+  margin-top: 100px;
+}
+
+.contact-me {
+  width: 55%;
+  margin: 100px auto 100px auto;
+}
+
+.myButton {
+	background-color:#44c767;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:"Barlow",serif;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.bottom-container {
+  height: 150px;
+  background-color: #44c767;
+  margin: 100px auto 100px auto;
+  margin-bottom: 0px;
 }
