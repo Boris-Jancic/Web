@@ -10,8 +10,19 @@ h1 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
 #title {
   background-color: #ff4c68;
+}
+
+#features {
+  padding: 8% 15% 8% 15;
 }
 
 .container-fluid {
@@ -52,4 +63,31 @@ h1 {
   transform: rotate(25deg);
   position: static;
   margin-top: 60px;
+}
+
+/* Feature row */
+
+#features {
+  padding: 7% 15%;
+}
+
+.features-row {
+
+}
+.feature-box {
+  display: block;
+  text-align: center;
+}
+
+.feature-img {
+  color: #ef8172;
+}
+
+.feature-img:hover {
+  color: red;
+}
+
+/* Testemonials */
+
+#testimonials {
 }
