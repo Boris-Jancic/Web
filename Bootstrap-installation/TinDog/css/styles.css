@@ -10,6 +10,13 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
 h3 {
   font-size: 2rem;
   line-height: 1.5;
@@ -19,10 +26,6 @@ h3 {
 
 #title {
   background-color: #ff4c68;
-}
-
-#features {
-  padding: 8% 15% 8% 15;
 }
 
 .container-fluid {
@@ -47,7 +50,7 @@ h3 {
 
 .nav-link {
     font-size: 1.2rem;
-    font-family: "Montserrat-Light"
+    font-family: "Montserrat"
 }
 
 /* Download Buttons */
@@ -59,7 +62,8 @@ h3 {
 /* Title image */
 
 .title-img {
-  width: 60%;
+  width: 40%;
+  left: 150px;
   transform: rotate(25deg);
   position: static;
   margin-top: 60px;
@@ -68,7 +72,8 @@ h3 {
 /* Feature row */
 
 #features {
-  padding: 7% 15%;
+  padding: 8% 12%;
+  background-color: white;
 }
 
 .features-row {
@@ -81,6 +86,7 @@ h3 {
 
 .feature-img {
   color: #ef8172;
+  z-index: -1;
 }
 
 .feature-img:hover {
@@ -89,5 +95,44 @@ h3 {
 
 /* Testemonials */
 
-#testimonials {
+#testemonials {
+  background-color: #ef8172;
+  text-align: center;
+  color: #fff;
+}
+
+
+.testimonial-img{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Press */
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 3%
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px
+}
+
+/* Pricing */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2% 3% 2%;
 }
