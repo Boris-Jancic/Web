@@ -2,26 +2,22 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-  font-size: 5rem;
-  color: white;
-  line-height: 1.5;
+h1, h2, h3 {
   font-family: 'Montserrat';
-  font-weight: bold;
+  line-height: 1.5
+}
+
+h1 {
+  font-size: 4vw;
+  color: white;
 }
 
 h2 {
   font-size: 3rem;
-  line-height: 1.5;
-  font-family: 'Montserrat';
-  font-weight: bold;
 }
 
 h3 {
   font-size: 2rem;
-  line-height: 1.5;
-  font-family: 'Montserrat';
-  font-weight: bold;
 }
 
 #title {
@@ -62,11 +58,8 @@ h3 {
 /* Title image */
 
 .title-img {
-  width: 40%;
-  left: 150px;
+  width: 50%;
   transform: rotate(25deg);
-  position: static;
-  margin-top: 60px;
 }
 
 /* Feature row */
@@ -86,7 +79,6 @@ h3 {
 
 .feature-img {
   color: #ef8172;
-  z-index: -1;
 }
 
 .feature-img:hover {
@@ -135,4 +127,45 @@ h3 {
 
 .pricing-column {
   padding: 3% 2% 3% 2%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Call to action */
+
+#cta {
+  text-align: center;
+  padding-top: 100px;
+  background-color: #ff4c68;
+}
+
+.cta-text {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: white;
+}
+
+/* Footer */
+
+#footer {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.footer-icon {
+    margin: 0 10px 0 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    align-self: center;
+    transform: rotate(0);
+  }
 }
