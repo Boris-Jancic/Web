@@ -1,32 +1,38 @@
-body {
+ body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat';
+  line-height: 1.5
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4vw;
   color: white;
-  line-height: 1.5;
-  font-family: 'Montserrat';
-  font-weight: bold;
 }
 
 h3 {
   font-size: 2rem;
-  line-height: 1.5;
-  font-family: 'Montserrat';
-  font-weight: bold;
 }
 
-#title {
-  background-color: #ff4c68;
-}
-
-#features {
-  padding: 8% 15% 8% 15;
-}
+/* Containers */
 
 .container-fluid {
-  padding: 3% 15% 3% 15%;
+  padding: 7% 15% 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+
+}
+
+.white-section {
+  background-color: #fff;
+
 }
 
 /* Navigation Bar */
@@ -41,13 +47,9 @@ h3 {
     font-weight: bold;
 }
 
-.nav-item {
-  padding: 0 18px;
-}
-
 .nav-link {
     font-size: 1.2rem;
-    font-family: "Montserrat-Light"
+    font-family: "Montserrat"
 }
 
 /* Download Buttons */
@@ -56,27 +58,21 @@ h3 {
   margin: 5% 3% 5% 0;
 }
 
-/* Title image */
+/* Title */
 
 .title-img {
-  width: 60%;
+  width: 50%;
   transform: rotate(25deg);
-  position: static;
-  margin-top: 60px;
 }
 
 /* Feature row */
 
-#features {
-  padding: 7% 15%;
+.feature-title {
+  font-size: 2rem;
 }
 
-.features-row {
-
-}
 .feature-box {
   display: block;
-  text-align: center;
 }
 
 .feature-img {
@@ -89,5 +85,75 @@ h3 {
 
 /* Testemonials */
 
-#testimonials {
+#testemonials {
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* Press */
+
+#press {
+  background-color: #ef8172;
+  color: #fff;
+  padding-bottom: 3%
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px
+}
+
+/* Pricing */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2% 3% 2%;
+}
+
+.price-title {
+  font-size: 2rem
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Call to action */
+
+
+/* Footer */
+
+
+.cta-heading {
+  color: white;
+}
+
+.footer-icon {
+    margin: 0 10px 0 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    align-self: center;
+    transform: rotate(0);
+  }
 }
