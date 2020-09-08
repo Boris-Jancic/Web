@@ -1,49 +1,62 @@
-var gamePattern = new Array();
 var buttonColours = ["red", "blue", "green", "yellow"];
 
+var gamePattern = [];
+var userClickedPattern = [];
+
+
+$(".btn").click(function() {
+
+  var userChosenColour = $(this).attr("id");
+  userClickedPattern.push(userChosenColour);
+
+  playSound(userChosenColour);
+
+  animatePress(userChosenColour);
+});
+
+
+function animatePress(currentColour) {
+
+    $("#" + currentColour).addClass("pressed");
+
+    setTimeout( function() {
+      $("#" + currentColour).removeClass("pressed");
+    }, 100);
+
+}
+
+
+function playSound(name) {
+
+  var audio = new Audio("sounds/" + name + ".mp3");
+  audio.play();
+
+}
+
+
 function nextSequence() {
-  var randomNumber = Math.round((Math.random() * 3));
-  return randomNumber;
+
+  var randomNumber = Math.floor(Math.random() * 4);
+  var randomChosenColour = buttonColours[randomNumber];
+  gamePattern.push(randomChosenColour);
+
+  $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+
+  playSound(randomChosenColour);
+
 }
 
 
-function nextColor() {
-  var nextButton =  buttonColours[nextSequence()];
-  $("button").on("hover", function () {
-    console.log("dsad");
-  })
-}
+$(document).on('keypress',function(e) {
+    console.log(e.key);
+});
 
-
-function nextButton() {
-  var randColor = nextSequence();
-
-  $(".btn" + "." + buttonColours[randColor]).on("click", function () {
-    console.log("clicked");
-    $(".btn" + "." + buttonColours[randColor]).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
-
-
-  switch (buttonColours[randColor]) {
-    case "red":
-      var red = new Audio('sounds/red.mp3');
-      red.play();
-      break;
-
-    case "blue":
-      var blue = new Audio('sounds/blue.mp3');
-      blue.play();
-      break;
-
-    case "green":
-      var green = new Audio('sounds/green.mp3');
-      green.play();
-      break;
-
-    case "yellow":
-      var yellow = new Audio('sounds/yellow.mp3');
-      yellow.play();
-      break;
-
-    default: console.log("sadsadsdasda");
-  });
-}
+// function userChoice() {
+//     $(".btn").on("click", function() {
+//       userClickedPattern.push(this.id);
+//       playSound(this.id);
+//       $(".btn#" + this.id).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+//
+//       console.log(userClickedPattern);
+//     });
+// }
