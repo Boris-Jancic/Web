@@ -1,30 +1,24 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>To Do List</title>
-  </head>
-  <body>
+<%- include("header") -%>
 
+    <div class="box" id="heading">
+      <!-- <%= %> Is EJS syntax, here we place variables that are passed from javascript -->
+      <h1><%= listTitle %></h1>
+    </div>
 
-    <!-- <%= %> Is EJS syntax, here we place variables that are passed from javascript -->
-    <h1><%= kindOfDay %> ToDo ListList</h1>
-
-    <!-- Each time we click submit a new item is appended to the ul -->
-    <ul>
+    <div class="box">
+      <!-- Each time we click submit a new item is appended to the ul -->
       <% for (var i=0; i<newListItems.length; i++) { %>
-        <li> <%= newListItems[i] %> </li>
+        <div class="item">
+          <input type="checkbox" name="" value="">
+          <p> <%= newListItems[i] %> </p>
+        </div>
       <% } %>
-    </ul>
 
-    <!-- When we click the button the string gets appended to newListItems -->
-    <form class="" action="/" method="post">
+      <!-- When we click the button the string gets appended to newListItems -->
+      <form class="" action="/" method="post">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <button type="submit" name="list" value= <%= listTitle %> >+</button>
+      </form>
+    </div>
 
-      <input type="text" name="newItem">
-
-      <button type="submit" name="button">Add</button>
-
-    </form>
-
-  </body>
-</html>
+    <%- include("footer") -%>
