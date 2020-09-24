@@ -6,7 +6,11 @@
   <% posts.forEach(function(post) { %>
     <div name="item">
       <h1> <%= post.title %> </h1>
-      <p> <%= post.text %> </p>
+      <!-- Post text is shortend to 100 characters -->
+      <p>
+        <%= post.text.substring(0,100) + "..." %>
+        <a href="/posts/<%= post.title %>">Read More</a>
+      </p>
     </div>
   <% }); %>
 
